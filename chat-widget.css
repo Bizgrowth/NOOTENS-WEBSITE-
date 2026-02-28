@@ -97,7 +97,7 @@
     margin: 0;
     font-size: 1.1rem;
     font-family: 'Playfair Display', serif;
-    color: var(--gold-primary);
+    color: #CDA873;
 }
 
 .chat-header .status {
