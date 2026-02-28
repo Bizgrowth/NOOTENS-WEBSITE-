@@ -166,4 +166,34 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // 8. Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const mobileBtnIcon = mobileBtn ? mobileBtn.querySelector('i') : null;
+
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                mobileBtnIcon.classList.remove('fa-bars');
+                mobileBtnIcon.classList.add('fa-times');
+            } else {
+                mobileBtnIcon.classList.remove('fa-times');
+                mobileBtnIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        const links = navLinks.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                if (mobileBtnIcon) {
+                    mobileBtnIcon.classList.remove('fa-times');
+                    mobileBtnIcon.classList.add('fa-bars');
+                }
+            });
+        });
+    }
 });
