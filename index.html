@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nootens Collection | Coastal Luxury Real Estate</title>
+    <meta name="description"
+        content="Discover premium coastal properties in Ponte Vedra Beach, Jacksonville Beach, Neptune Beach, and Atlantic Beach with Pattie Nootens Nootens.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> <!-- Smooth Scroll -->
+</head>
+
+<body class="loading">
+    <div class="loader">
+        <h1 class="loader-logo">The Nootens Collection</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-name">NOOTENS</span>
+                <span class="logo-collection">COLLECTION</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">The Brand</a>
+                <a href="#communities" class="nav-link">Communities</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="../Patties Brand/index.html" class="nav-link btn-connect">Connect</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Local Background Video (MP4 is much better for autoplaying backgrounds) -->
+        <video class="hero-video" autoplay muted loop playsinline
+            poster="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop">
+            <!-- Coastal drone footage -->
+            <source src="Photos/Video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h2 class="subtitle gsap-hero">Elevating Coastal Living</h2>
+            <h1 class="title gsap-hero">Curated Luxury in<br />Northeast Florida</h1>
+            <div class="hero-actions gsap-hero">
+                <a href="#portfolio" class="btn btn-primary">Discover Estates</a>
+                <a href="#communities" class="btn btn-outline">Explore Communitites</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator gsap-hero">
+            <span class="scroll-text">Explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container grid-2">
+            <div class="about-content">
+                <h3 class="section-subtitle">The Brand</h3>
+                <h2 class="section-title">Pattie Stockton Nootens</h2>
+                <div class="about-text">
+                    <p>Epitomizing integrity, energy, and exclusive service in every detail of your real estate
+                        transaction. Raised in the Jacksonville Beaches, Pattie commands an unparalleled 18-year mastery
+                        of Northeast Florida's luxury market.</p>
+                    <p>Whether navigating pristine waterfront properties, securing visionary new construction, or
+                        orchestrating high-net-worth investments, her expertise is as rare as the homes she represents.
+                    </p>
+                </div>
+                <!-- Link to adjacent Patties Brand platform -->
+                <a href="../Patties Brand/index.html" class="btn btn-outline mt-x">Experience the Platform</a>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="image-reveal"></div>
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
+                    alt="Luxury Coastal Home" class="about-image" data-speed="0.8">
+                <div class="experience-badge">
+                    <span class="badge-number">18+</span>
+                    <span class="badge-text">Years of<br>Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communities Section -->
+    <section class="communities section-padding" id="communities">
+        <div class="container">
+            <div class="section-header text-center">
+                <h3 class="section-subtitle">Exclusive Territories</h3>
+                <h2 class="section-title">Coastal Collections</h2>
+            </div>
+
+            <div class="communities-grid">
+                <!-- Ponte Vedra -->
+                <div class="community-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://photos.zillowstatic.com/fp/56f28397cf0951416aaf5307ed2ea356-cc_ft_960.jpg"
+                            alt="108 Laurel Ct, Ponte Vedra Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ponte Vedra Beach</h3>
+                        <p>World-class golf, pristine shores, and unparalleled estate living.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Jacksonville Beach -->
+                <div class="community-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://photos.zillowstatic.com/fp/c091309e9aec1c474c57e77c5799ad4e-cc_ft_960.jpg"
+                            alt="2912 Abaco Ln, Jacksonville Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jacksonville Beach</h3>
+                        <p>Vibrant coastal energy meets sophisticated modern oceanfronts.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Neptune Beach -->
+                <div class="community-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://photos.zillowstatic.com/fp/03fa97b4345e255c05f0d26ba8a4cf95-cc_ft_960.jpg"
+                            alt="527 Florida Blvd, Neptune Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Neptune Beach</h3>
+                        <p>Charming enclaves presenting relaxed, high-end seaside living.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Atlantic Beach -->
+                <div class="community-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://photos.zillowstatic.com/fp/7ad9dabefb4a4918bbf4a16041210d48-cc_ft_960.jpg"
+                            alt="1875 Live Oak Ln, Atlantic Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Atlantic Beach</h3>
+                        <p>A tranquil luxury retreat framed by gorgeous historic coastal charm.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio section-padding dark-section" id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <h3 class="section-subtitle light">Curated Offerings</h3>
+                <h2 class="section-title light">Signature Estates</h2>
+            </div>
+
+            <div class="horizontal-scroll-container">
+                <div class="horizontal-scroll-wrapper">
+                    <!-- Listing 1 -->
+                    <div class="property-slide">
+                        <div class="property-image">
+                            <!-- Parallax image -->
+                            <img src="https://photos.zillowstatic.com/fp/56f28397cf0951416aaf5307ed2ea356-cc_ft_960.jpg"
+                                alt="108 Laurel Court, Ponte Vedra Beach" class="parallax-img">
+                            <div class="status-badge">Just Listed</div>
+                        </div>
+                        <div class="property-details">
+                            <h4 class="price">$1,490,000</h4>
+                            <p class="address">108 Laurel Ct, Ponte Vedra Beach</p>
+                            <div class="specs">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-vector-square"></i> 3,307 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Listing 2 -->
+                    <div class="property-slide">
+                        <div class="property-image">
+                            <!-- Parallax image -->
+                            <img src="https://photos.zillowstatic.com/fp/03fa97b4345e255c05f0d26ba8a4cf95-cc_ft_960.jpg"
+                                alt="Neptune Beach Estate" class="parallax-img">
+                        </div>
+                        <div class="property-details">
+                            <h4 class="price">$1,500,000</h4>
+                            <p class="address">Neptune Beach Estate</p>
+                            <div class="specs">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-vector-square"></i> 2,466 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Listing 3 -->
+                    <div class="property-slide">
+                        <div class="property-image">
+                            <img src="https://photos.zillowstatic.com/fp/7ad9dabefb4a4918bbf4a16041210d48-cc_ft_960.jpg"
+                                alt="Atlantic Beach Estate" class="parallax-img">
+                        </div>
+                        <div class="property-details">
+                            <h4 class="price">$1,300,000</h4>
+                            <p class="address">Atlantic Beach Estate</p>
+                            <div class="specs">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-vector-square"></i> 2,177 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Listing 4 -->
+                    <div class="property-slide">
+                        <div class="property-image">
+                            <img src="https://photos.zillowstatic.com/fp/c091309e9aec1c474c57e77c5799ad4e-cc_ft_960.jpg"
+                                alt="Jacksonville Beach Estate" class="parallax-img">
+                        </div>
+                        <div class="property-details">
+                            <h4 class="price">$1,575,000</h4>
+                            <p class="address">Jacksonville Beach Estate</p>
+                            <div class="specs">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 4 Baths</span>
+                                <span><i class="fas fa-vector-square"></i> 3,448 SqFt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Overlay Section -->
+    <section class="connect section-padding" id="connect">
+        <div class="container container-narrow text-center">
+            <h2 class="section-title">Ready to Elevate Your Standard?</h2>
+            <p class="lead-text">Step into Pattie's bespoke Brand Platform to commence your luxury real estate journey.
+            </p>
+            <a href="../Patties Brand/index.html" class="btn btn-primary btn-large mt-x">
+                Enter The Brand Platform <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-footer">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-name">NOOTENS</span>
+                    <span class="logo-collection">COLLECTION</span>
+                </a>
+                <p>Curating coastal luxury in Northeast Florida.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#about">The Brand</a>
+                <a href="#communities">Communities</a>
+                <a href="#portfolio">Properties</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Pattie Stockton Nootens</p>
+                <p>Florida Homes Realty and Mortgage</p>
+                <a href="../Patties Brand/index.html" class="footer-msg">Message on Platform</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Nootens Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
