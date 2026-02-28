@@ -103,7 +103,7 @@
 .chat-header .status {
     margin: 4px 0 0 0;
     font-size: 0.8rem;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     gap: 6px;
@@ -195,7 +195,7 @@
 .ai-message .message-content {
     background: rgba(45, 45, 45, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    color: var(--text-primary);
+    color: #ffffff;
     border-bottom-left-radius: 4px;
 }
 
@@ -206,7 +206,7 @@
 .user-message .message-content {
     background: linear-gradient(135deg, rgba(205, 168, 115, 0.2), rgba(205, 168, 115, 0.05));
     border: 1px solid rgba(205, 168, 115, 0.3);
-    color: var(--text-primary);
+    color: #ffffff;
     border-bottom-right-radius: 4px;
 }
 
