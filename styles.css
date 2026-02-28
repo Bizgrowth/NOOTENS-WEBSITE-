@@ -573,13 +573,27 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    padding: 10px 0;
+    /* Increase touch target for mobile */
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+    /* Ensure it stays clickable above background */
+    text-decoration: none;
 }
 
 .explore-link i {
     transition: transform 0.3s ease;
 }
 
-.community-card:hover .explore-link i {
+.explore-link:hover,
+.explore-link:active {
+    color: #dfcdb4;
+    /* Lighter gold on hover/tap */
+}
+
+.community-card:hover .explore-link i,
+.explore-link:hover i {
     transform: translateX(5px);
 }
 
