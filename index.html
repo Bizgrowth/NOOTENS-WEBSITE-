@@ -15,6 +15,8 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -40,7 +42,8 @@
                 <a href="#about" class="nav-link">The Brand</a>
                 <a href="#communities" class="nav-link">Communities</a>
                 <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="../Patties Brand/index.html" class="nav-link btn-connect">Connect</a>
+                <a href="mailto:9049881022@vtext.com,9045884239@txt.att.net,9044774354@tmomail.net"
+                    class="nav-link btn-connect">Connect</a>
             </div>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -88,7 +91,8 @@
                     </p>
                 </div>
                 <!-- Link to adjacent Patties Brand platform -->
-                <a href="../Patties Brand/index.html" class="btn btn-outline mt-x">Experience the Platform</a>
+                <a href="mailto:9049881022@vtext.com,9045884239@txt.att.net,9044774354@tmomail.net"
+                    class="btn btn-outline mt-x">Experience the Platform</a>
             </div>
             <div class="about-image-wrapper">
                 <div class="image-reveal"></div>
@@ -285,7 +289,8 @@
             <h2 class="section-title">Ready to Elevate Your Standard?</h2>
             <p class="lead-text">Step into Pattie's bespoke Brand Platform to commence your luxury real estate journey.
             </p>
-            <a href="../Patties Brand/index.html" class="btn btn-primary btn-large mt-x">
+            <a href="mailto:9049881022@vtext.com,9045884239@txt.att.net,9044774354@tmomail.net"
+                class="btn btn-primary btn-large mt-x">
                 Enter The Brand Platform <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
@@ -311,7 +316,8 @@
                 <h4>Contact</h4>
                 <p>Pattie Stockton Nootens</p>
                 <p>Florida Homes Realty and Mortgage</p>
-                <a href="../Patties Brand/index.html" class="footer-msg">Message on Platform</a>
+                <a href="mailto:9049881022@vtext.com,9045884239@txt.att.net,9044774354@tmomail.net"
+                    class="footer-msg">Message on Platform</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -319,7 +325,45 @@
         </div>
     </footer>
 
+    <!-- Chat Widget -->
+    <link rel="stylesheet" href="chat-widget.css">
+    <div id="ai-chat-widget">
+        <!-- Floating Button -->
+        <button id="ai-chat-btn" class="ai-chat-btn">
+            <i class="ph ph-chat-teardrop-text"></i>
+        </button>
+
+        <!-- Chat Panel -->
+        <div id="ai-chat-panel" class="ai-chat-panel glass-card hidden">
+            <div class="chat-header">
+                <div>
+                    <h3>Pattie's AI Consultant</h3>
+                    <p class="status"><span class="dot"></span> Online</p>
+                </div>
+                <div class="header-actions">
+                    <button id="ai-chat-expand" title="Expand"><i class="ph ph-arrows-out-simple"></i></button>
+                    <button id="ai-chat-close" title="Close"><i class="ph ph-x"></i></button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message ai-message">
+                    <div class="message-content">
+                        Hello! I'm Pattie's virtual AI operations consultant. Ask me anything about our AI strategies or
+                        properties!
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="chat-send"><i class="ph ph-paper-plane-right"></i></button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
+    <script src="chat-widget.js"></script>
     <script src="script.js"></script>
 </body>
 

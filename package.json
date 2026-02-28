@@ -1,0 +1,13 @@
+{
+  "name": "patties-aiops",
+  "version": "1.0.0",
+  "description": "Pattie's Brand AI Ops Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^17.3.1"
+  }
+}
