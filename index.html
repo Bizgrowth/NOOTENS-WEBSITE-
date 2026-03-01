@@ -341,26 +341,56 @@
                     <p class="status"><span class="dot"></span> Online</p>
                 </div>
                 <div class="header-actions">
+                    <!-- Connect Button — opens inline form -->
+                    <button id="ai-chat-connect" title="Connect with Pattie">📩 Connect</button>
                     <button id="ai-chat-expand" title="Expand"><i class="ph ph-arrows-out-simple"></i></button>
                     <button id="ai-chat-close" title="Close"><i class="ph ph-x"></i></button>
                 </div>
             </div>
 
-            <div class="chat-messages" id="chat-messages">
-                <div class="message ai-message">
-                    <div class="message-content">
-                        Hello! I'm Pattie's virtual AI operations consultant. Ask me anything about our AI strategies or
-                        properties!
+            <!-- ── Chat View (default) ─────────────────────────── -->
+            <div id="chat-view">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            Hello! I'm Pattie's AI consultant for The Nootens Collection. Ask me anything about coastal
+                            properties or luxury living in Northeast Florida — or click <strong>📩 Connect</strong>
+                            above to leave your details!
+                        </div>
                     </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Ask me anything...">
+                    <button id="chat-send"><i class="ph ph-paper-plane-right"></i></button>
                 </div>
             </div>
 
-            <div class="chat-input-area">
-                <input type="text" id="chat-input" placeholder="Type your message...">
-                <button id="chat-send"><i class="ph ph-paper-plane-right"></i></button>
+            <!-- ── Form View (shown when Connect is clicked) ──── -->
+            <div id="chat-form-view" style="display:none;">
+                <div class="form-view-header">
+                    <p>Connect with Pattie</p>
+                    <span>Leave your details and she'll reach out personally.</span>
+                </div>
+
+                <form id="chat-contact-form">
+                    <input type="text" id="form-name" placeholder="Your Full Name" autocomplete="name">
+                    <input type="email" id="form-email" placeholder="Your Email Address *" required
+                        autocomplete="email">
+                    <input type="tel" id="form-phone" placeholder="Your Phone Number (optional)" autocomplete="tel">
+                    <button type="submit" class="form-submit-btn">Send to Pattie →</button>
+                </form>
+
+                <div id="form-success" style="display:none;">
+                    <div class="success-icon">✅</div>
+                    <p>Got it! Pattie will be in touch soon.</p>
+                    <span>Returning to chat...</span>
+                </div>
+
+                <button id="form-back-btn" class="form-back-btn">← Back to Chat</button>
             </div>
         </div>
     </div>
+
 
     <!-- Scripts -->
     <script src="chat-widget.js"></script>
